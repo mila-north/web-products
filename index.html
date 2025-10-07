@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mila North - Yamasaki Amazon products</title>
+
+    <link rel="icon" type="image/png" href="pictures/logo.png" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to bottom right, #e6ecf5, #cdd6df);
+        color: #333;
+    }
+
+
+    header {
+        text-align: center;
+        padding: 50px 20px;
+    }
+
+
+    header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+
+
+    header p {
+        font-size: 1.2rem;
+        color: #555;
+    }
+
+
+    section {
+        padding: 20px 20px;
+        max-width: 1000px;
+        margin: auto;
+    }
+
+
+    h2 {
+        border-bottom: 2px solid #bbb;
+        padding-bottom: 8px;
+        margin-bottom: 20px;
+        color: #2a3d66;
+    }
+
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+
+    li {
+        margin-bottom: 10px;
+        font-size: 1.1rem;
+    }
+
+
+    /* Gallery Row Layout */
+    .gallery {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+
+
+    .order-box {
+        text-align: center;
+        flex: 1 1 220px;
+        max-width: 250px;
+    }
+
+
+    .gallery img {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+        aspect-ratio: 2 / 3;
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s;
+        cursor: pointer;
+    }
+
+
+    .gallery img:hover {
+        transform: scale(1.05);
+    }
+
+
+    a button {
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 1rem;
+        border: none;
+        border-radius: 5px;
+        background-color: #2a3d66;
+        color: white;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+
+    a button:hover {
+        background-color: #3d5889;
+    }
+
+
+    /* Poppins font for About Me text */
+    .about-text {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+
+
+    /* Responsive Layout */
+    @media (max-width: 900px) {
+        .gallery {
+            justify-content: center;
+        }
+        .order-box {
+            flex: 1 1 45%; /* 2 per row */
+        }
+    }
+
+
+    @media (max-width: 500px) {
+        .order-box {
+            flex: 1 1 100%; /* 1 per row */
+        }
+    }
+
+    .collection {
+         font-family: 'Poppins', sans-serif;
+    }
+    .headline {
+        line-height: 1.5
+    }
+    </style>
+</head>
+
+<body>
+<header>
+    <img src="pictures/logo.png" />
+    <br />
+    <h1>Mila North</h1>
+    <p class="headline">Graphic Designer | Sports Apparel & Branding Specialist<br />Email: milanorthdesign@gmail.com</p>
+</header>
+
+<section>
+<h2>About Me</h2>
+<p class="about-text">
+I am a creative and detail-oriented designer specializing in sports apparel,
+embroidery design, and branding. I bring concepts to life from initial sketches to production-ready designs,
+helping athletes and teams shine on and off the mat.
+</p>
+</section>
+
+<section>
+    <h2>Amazon Yamasaki Academy Products:</h2>
+    <p class="collection">Fall-Winter Collection: Great fit and soft feel</p>
+    <div class="gallery">
+        <div class="order-box">
+            <img src="pictures/blue_hoodie.png" alt="Rash Guard Design"><br />
+            <a href="https://a.co/d/2c5o2nA" target="_blank"><button>Order</button></a>
+        </div>
+        <div class="order-box">
+            <img src="pictures/black_hoodie.png" alt="Gi Embroidery Design"><br />
+            <a href="https://www.amazon.com/dp/B0FSFWV2ZR" target="_blank"><button>Order</button></a>
+        </div>
+        <div class="order-box">
+            <img src="pictures/white_hoodie.png" alt="Backpack Design"><br />
+            <a href="https://www.amazon.com/dp/B0FT57YL9P" target="_blank"><button>Order</button></a>
+        </div>
+        <div class="order-box">
+            <img src="pictures/long_tee.png" alt="Rash Guard Design"><br />
+            <a href="https://www.amazon.com/Tomoe-Nage-Line-Sleeve-T-Shirt/dp/B0F1L4JQNL" target="_blank"><button>Order</button></a>
+        </div>
+    </div>
+    <br />
+    <button onclick="showMessage()">Click Me!</button>
+    <p id="message" style="margin-top:15px; font-weight:bold; color:#2a3d66;"></p>
+</section>
+
+<script>
+    function showMessage() {
+        document.getElementById("message").innerHTML = "Thanks for exploring my work!🚀 ";
+    }
+</script>
+
+</body>
+</html>
