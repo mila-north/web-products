@@ -56,12 +56,29 @@ body {
         gap: 20px;
         /*justify-content: center;*/
         flex-wrap: wrap;
-        margin-top: 20px;
+        margin-top: 40px;
     }
 
     .top-container {
         justify-content: center;
         display: flex;
+        max-width: 100%;
+        height: auto;
+        padding: 0px;
+        padding-bottom: 20px;
+    }
+
+    .about-text {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.6rem;
+        line-height: 1.6;
+        min-width: 250px;
+        overflow: hidden;
+    }
+
+    .about-text img {
+        height: 40px;
+        width: 40px;
     }
 
 
@@ -69,7 +86,7 @@ body {
         font-family: poppins;
         text-align: center;
         flex: 1 1 220px;
-        max-width: 250px;
+        max-width: 500px;
     }
 
 
@@ -103,19 +120,9 @@ body {
         transition: 0.3s;
     }
 
-
     a button:hover {
         background-color: #ce1c37;
     }
-
-
-    /* Poppins font for About Me text */
-    .about-text {
-        font-family: 'Poppins', sans-serif;
-        font-size: 1.1rem;
-        line-height: 1.6;
-    }
-
 
     /* Responsive Layout */
     @media (max-width: 900px) {
