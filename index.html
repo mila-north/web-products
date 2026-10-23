@@ -1,130 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Yamasaki Academy - Amazon Product Collection</title>
-  <link rel="stylesheet" href="styles/yamasaki_amazon_products.css">
+  <link rel="stylesheet" href="styles/yamasaki_amazon_products.css" />
 </head>
 <body>
-  <div class="page-container">
-    
-    <!-- Header Section -->
-    <header class="header">
-      <div class="header-text">
-        <h1 class="brand-title">YAMASAKI ACADEMY</h1>
-        <p class="brand-subtitle">Amazon Product Collection</p>
-      </div>
-      <div class="logo-container">
-        <img src="images/yam_logo.png" alt="Yamasaki Academy Logo" class="brand-logo" width="140" height="140">
-      </div>
-    </header>
 
-    <main>
-      <!-- FIRST SECTION: Kids & Family -->
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-content">
+      <div class="header-title">
+        <h1>YAMASAKI ACADEMY</h1>
+        <p>Amazon Product Collection</p>
+      </div>
+      <div class="header-logo">
+        <img src="images/yam_logo.png" alt="Yamasaki Academy Logo" />
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CATALOG CONTENT -->
+  <main class="catalog-container">
+
+    <!-- 01 / ACADEMY LEGACY -->
+    <section class="catalog-section">
+      <h2 class="section-title">01 / ACADEMY LEGACY</h2>
+      <div class="grid-two-col">
+        
+        <!-- Container 1 -->
+        <article class="card-container legacy-card">
+          <span class="badge-new">NEW</span>
+          <div class="card-media media-legacy">
+            <img src="images/moto_hoodie.png" alt="Yamasaki Academy Moto Zip Hoodie" loading="lazy" />
+          </div>
+          <div class="card-footer-horizontal">
+            <div class="card-text">
+              <h3 class="product-title">Yamasaki Academy Moto Zip Hoodie</h3>
+              <span class="product-price">$37.99</span>
+              <span class="product-fit">Unisex Fit</span>
+            </div>
+            <div class="card-action">
+              <a href="https://www.amazon.com/dp/B0FSF6V17Y" target="_blank" rel="noopener noreferrer" class="btn-action btn-amazon">View on Amazon</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Container 2 -->
+        <article class="card-container legacy-card">
+          <div class="card-media media-legacy">
+            <img src="images/tomoe_nage_hoodie.png" alt="Yamasaki Academy Tomoe Nage Zip Hoodie" loading="lazy" />
+          </div>
+          <div class="card-footer-horizontal">
+            <div class="card-text">
+              <h3 class="product-title">Yamasaki Academy Tomoe Nage Zip Hoodie</h3>
+              <span class="product-price">$37.99</span>
+              <span class="product-fit">Unisex Fit</span>
+            </div>
+            <div class="card-action">
+              <a href="https://www.amazon.com/dp/B0FSFWV2ZR?" target="_blank" rel="noopener noreferrer" class="btn-action btn-amazon">View on Amazon</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SIDE-BY-SIDE SECTIONS (02 & 03) -->
+    <div class="sections-row">
+      
+      <!-- 02 / JAPANESE LOGO MOTIFS -->
       <section class="catalog-section">
-        <h2 class="section-title">
-          <span class="highlight-red">New</span> <span class="highlight-cyan">Kids and Family</span>
-        </h2>
+        <h2 class="section-title">02 / JAPANESE LOGO MOTIFS</h2>
+        <div class="card-container multi-product-box">
+          <div class="products-duo-grid">
+            
+            <article class="product-item">
+              <div class="card-media media-portrait">
+                <img src="images/blue_zip_japanese.png" alt="Japanese Motif Logo Zip Hoodie" loading="lazy" />
+              </div>
+              <div class="item-content">
+                <div class="card-text">
+                  <h3 class="product-title">Japanese Motif Logo Zip Hoodie</h3>
+                  <span class="product-price">$37.99</span>
+                  <span class="product-fit">Unisex Fit</span>
+                </div>
+                <div class="card-action">
+                  <a href="https://www.amazon.com/dp/B0FKQFFK4H" target="_blank" rel="noopener noreferrer" class="btn-action btn-amazon">View on Amazon</a>
+                </div>
+              </div>
+            </article>
 
-        <div class="product-grid">
-          
-          <!-- Card 1 -->
-          <div class="product-card">
-            <div class="card-image-wrapper">
-              <img src="images/dad_son2.png" alt="Yamasaki Academy Dad and Son T-Shirts" class="product-img" loading="lazy">
-            </div>
-            <div class="card-action">
-              <a href="https://www.amazon.com/dp/B0HM5H197V?" target="_blank" rel="noopener noreferrer" class="btn-amazon">View on Amazon</a>
-            </div>
+            <article class="product-item">
+              <div class="card-media media-portrait">
+                <img src="images/ink_pullover.png" alt="Japanese Ink Logo Pullover Hoodie" loading="lazy" />
+              </div>
+              <div class="item-content">
+                <div class="card-text">
+                  <h3 class="product-title">Japanese Ink Logo Pullover Hoodie</h3>
+                  <span class="product-price">$37.99</span>
+                  <span class="product-fit">Unisex Fit</span>
+                </div>
+                <div class="card-action">
+                  <a href="https://www.amazon.com/dp/B0FWKZC2QN" target="_blank" rel="noopener noreferrer" class="btn-action btn-amazon">View on Amazon</a>
+                </div>
+              </div>
+            </article>
+
           </div>
-
-          <!-- Card 2 -->
-          <div class="product-card">
-            <div class="card-image-wrapper">
-              <img src="images/family_tees.png" alt="Yamasaki Academy Family Tees Set" class="product-img" loading="lazy">
-            </div>
-            <div class="card-action">
-              <a href="https://www.amazon.com/dp/B0HM51ZVLT?" target="_blank" rel="noopener noreferrer" class="btn-amazon">View on Amazon</a>
-            </div>
-          </div>
-
-          <!-- Card 3 -->
-          <div class="product-card">
-            <div class="card-image-wrapper">
-              <img src="images/kids_sweatshirzoom.png" alt="Yamasaki Academy Kids Sweatshirt" class="product-img" loading="lazy">
-            </div>
-            <div class="card-action">
-              <a href="https://www.amazon.com/dp/B0HM9NLR28?" target="_blank" rel="noopener noreferrer" class="btn-amazon">View on Amazon</a>
-            </div>
-          </div>
-
-          <!-- Card 4 (Coming Soon Backpack) -->
-          <div class="product-card">
-            <div class="card-image-wrapper ribbon-container">
-              <span class="ribbon-coming-soon">coming soon</span>
-              <img src="images/bp2.png" alt="Yamasaki Academy Backpack" class="product-img" loading="lazy">
-            </div>
-            <div class="card-action">
-              <a href="javascript:void(0);" class="btn-amazon btn-disabled" aria-disabled="true" tabindex="-1">Coming Soon</a>
-            </div>
-          </div>
-
         </div>
       </section>
 
-      <!-- SECOND SECTION: Hoodies -->
-      <section class="catalog-section hoodie-section">
-        <h2 class="section-title">
-          <span class="highlight-cyan">Hoodies</span>
-        </h2>
+      <!-- 03 / KIDS & FAMILY COLLECTION -->
+      <section class="catalog-section">
+        <h2 class="section-title">03 / KIDS & FAMILY COLLECTION</h2>
+        <div class="card-container multi-product-box">
+          <div class="products-duo-grid">
+            
+            <article class="product-item">
+              <span class="badge-new">NEW</span>
+              <div class="card-media media-portrait">
+                <img src="images/dad_son_tee.png" alt="Japanese Motif Logo T-shirt" loading="lazy" />
+              </div>
+              <div class="item-content">
+                <div class="card-text">
+                  <h3 class="product-title">Japanese Motif Logo T-shirt</h3>
+                  <span class="product-price">$20.99</span>
+                  <span class="product-fit">Men, Women & Youth Fit</span>
+                </div>
+                <div class="card-action">
+                  <a href="https://www.amazon.com/dp/B0HM5H197V" target="_blank" rel="noopener noreferrer" class="btn-action btn-amazon">View on Amazon</a>
+                </div>
+              </div>
+            </article>
 
-        <div class="product-grid">
-          
-          <!-- Hoodie 1 -->
-          <div class="product-card">
-            <div class="card-image-wrapper">
-              <img src="images/black_hoodie_palletzoom.png" alt="Yamasaki Academy Black Zip Hoodie" class="product-img" loading="lazy">
-            </div>
-            <div class="card-action">
-              <a href="https://www.amazon.com/dp/B0FSFWV2ZR?" target="_blank" rel="noopener noreferrer" class="btn-amazon">View on Amazon</a>
-            </div>
+            <article class="product-item">
+              <span class="badge-new">NEW</span>
+              <div class="card-media media-portrait">
+                <img src="images/sweatshirt_kids.png" alt="Japanese Motif Logo Sweatshirt" loading="lazy" />
+              </div>
+              <div class="item-content">
+                <div class="card-text">
+                  <h3 class="product-title">Japanese Motif Logo Sweatshirt</h3>
+                  <span class="product-price">$31.99</span>
+                  <span class="product-fit">Unisex and Youth Fit</span>
+                </div>
+                <div class="card-action">
+                  <a href="https://www.amazon.com/dp/B0HM9NLR28" target="_blank" rel="noopener noreferrer" class="btn-action btn-amazon">View on Amazon</a>
+                </div>
+              </div>
+            </article>
+
           </div>
-
-          <!-- Hoodie 2 -->
-          <div class="product-card">
-            <div class="card-image-wrapper">
-              <img src="images/blue_hoodie_zoom.png" alt="Yamasaki Academy Blue Zip Hoodie" class="product-img" loading="lazy">
-            </div>
-            <div class="card-action">
-              <a href="https://www.amazon.com/dp/B0FKQFFK4H?" target="_blank" rel="noopener noreferrer" class="btn-amazon">View on Amazon</a>
-            </div>
-          </div>
-
-          <!-- Hoodie 3 -->
-          <div class="product-card">
-            <div class="card-image-wrapper">
-              <img src="images/whitepullover_pallet.png" alt="Yamasaki Academy White Pullover Hoodie" class="product-img" loading="lazy">
-            </div>
-            <div class="card-action">
-              <a href="https://www.amazon.com/dp/B0FT57YL9P?" target="_blank" rel="noopener noreferrer" class="btn-amazon">View on Amazon</a>
-            </div>
-          </div>
-
-          <!-- Hoodie 4 -->
-          <div class="product-card">
-            <div class="card-image-wrapper">
-              <img src="images/ink_pulloverhoodie.png" alt="Yamasaki Academy Light Ink Pullover Hoodie" class="product-img" loading="lazy">
-            </div>
-            <div class="card-action">
-              <a href="https://www.amazon.com/dp/B0FWKZC2QN?" target="_blank" rel="noopener noreferrer" class="btn-amazon">View on Amazon</a>
-            </div>
-          </div>
-
         </div>
       </section>
-    </main>
 
-  </div>
-</body>
-</html>
+    </div>
+
+    <!-- 04 / ACCESSORIES -->
+    <section class="catalog-section section-half">
+      <h2 class="section-title">04 / ACCESSORIES</h2>
+      <div class="half-width-wrapper">
+        <article class="card-container accessory-card">
+          <span class="badge-new">NEW</span>
+          <div class="card-media media-portrait">
+            <img src="images/backpack.png" alt="Youth Backpack 25 L" loading="lazy" />
+          </div>
+          <div class="card-text">
+            <h3 class="product-title">Youth Backpack</h3>
+            <span class="product-price">$42.99</span>
+            <span class="product-fit">25 L Capacity</span>
+          </div>
+          <div class="card-action">
+            <button class="btn-action btn-coming-soon" disabled>Coming Soon</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+  </main>
